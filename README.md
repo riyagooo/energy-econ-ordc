@@ -71,7 +71,7 @@ To reproduce our analysis, you will need to:
 If you use this code or findings in your work, please cite:
 
 ```
-Zubairi, I., Guo, R.Y., Li, L., Murata, M., Chu, I., Dorcély, C., & Villa, P.J. (2023). 
+Zubairi, I., Guo, R.Y., Li, L., Dorcély, C., Murata, M., Chu, I., & Villa, P.J. (2023). 
 NYISO Enhanced Scarcity Pricing Policy: Impacts on Consumer Prices. 
 Columbia University, School of International and Public Affairs.
 ```
