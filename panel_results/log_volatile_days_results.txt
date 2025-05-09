@@ -1,0 +1,39 @@
+LOG_VOLATILE_DAYS MODEL RESULTS
+================================================================================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              log_price   R-squared:                       0.352
+Model:                            OLS   Adj. R-squared:                  0.351
+Method:                 Least Squares   F-statistic:                 2.475e+13
+Date:                Sat, 03 May 2025   Prob (F-statistic):           4.04e-14
+Time:                        20:17:10   Log-Likelihood:                 37.741
+No. Observations:                8203   AIC:                            -53.48
+Df Residuals:                    8192   BIC:                             23.65
+Df Model:                          10                                         
+Covariance Type:              cluster                                         
+===================================================================================
+                      coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+Intercept           4.6056      0.048     95.954      0.000       4.512       4.700
+C(zone)[T.F]        0.3154      0.047      6.769      0.000       0.224       0.407
+C(zone)[T.NE]       0.3295      0.015     22.287      0.000       0.301       0.359
+C(year)[T.2020]    -0.0577      0.033     -1.729      0.084      -0.123       0.008
+C(year)[T.2021]     0.0145      0.052      0.276      0.782      -0.088       0.117
+C(year)[T.2022]     0.2120      0.001    287.680      0.000       0.211       0.213
+C(year)[T.2023]     0.3127      0.106      2.952      0.003       0.105       0.520
+C(year)[T.2024]     0.1363      0.048      2.822      0.005       0.042       0.231
+C(year)[T.2025]     0.1799      0.063      2.835      0.005       0.056       0.304
+treat_post          0.1158      0.058      1.994      0.046       0.002       0.230
+post               -0.0392      0.092     -0.426      0.670      -0.219       0.141
+==============================================================================
+Omnibus:                     1251.502   Durbin-Watson:                   0.270
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1990.273
+Skew:                           1.055   Prob(JB):                         0.00
+Kurtosis:                       4.172   Cond. No.                         62.3
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+
+NOTE: This implements a panel structure with entity fixed effects, equivalent to the PanelOLS estimator.

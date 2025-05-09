@@ -1,0 +1,9 @@
+Model,Variable,Coefficient,Std Error,P-value,CI,Significant
+Basic DiD,treat_post,2.7292,0.2508,0.000000,"[2.2377, 3.2208]",True
+With Year FE,treat_post,2.7292,0.2508,0.000000,"[2.2377, 3.2208]",True
+Triple Interaction,treat_post,1.0002,0.4873,0.040101,"[0.0452, 1.9552]",True
+Triple Interaction (Triple Term),treat_post_volatile,22.5095,8.3646,0.007123,"[6.1153, 38.9037]",True
+Triple + Year FE,treat_post,0.9765,0.7645,0.201478,"[-0.5218, 2.4748]",False
+Triple + Year FE (Triple Term),treat_post_volatile,23.6775,9.8083,0.015777,"[4.4536, 42.9015]",True
+Volatile Days Only,treat_post,22.1376,8.3663,0.008144,"[5.7400, 38.5351]",True
+Log (Volatile Days),treat_post,0.1158,0.0581,0.046137,"[0.0020, 0.2297]",True

@@ -1,0 +1,42 @@
+NYISO DAY-AHEAD PRICE ANALYSIS: PANEL REGRESSION RESULTS
+================================================================================
+
+OVERVIEW
+--------------------------------------------------
+Data period: 2019 to 2025
+Treatment date: May 1, 2022
+Treatment group: Zone F (Capital)
+Control groups: Zone C (Central), Zone NE (ISO-NE)
+Volatile days definition: Prices > 2 standard deviations from long-term mean
+Panel approach: Entity fixed effects with cluster-robust standard errors
+
+KEY FINDINGS
+--------------------------------------------------
+1. Basic treatment effect: 2.7292 (p = 0.000000)
+   This suggests a statistically significant effect on prices after the policy change.
+
+2. Additional effect during volatile days: 23.6775 (p = 0.015777)
+   This indicates a statistically significant additional effect on prices
+   during volatile days beyond the baseline effect.
+
+3. Percentage effect on volatile days: 12.28% (p = 0.046137)
+   The log-transformed model indicates a statistically significant
+   12.28% change in prices during volatile days after the policy change.
+
+METHODOLOGICAL NOTES
+--------------------------------------------------
+This analysis uses a panel data approach implemented through OLS with the following features:
+- Entity fixed effects included as zone dummies
+- Cluster-robust standard errors at the zone level
+- Year controls in selected models
+- Triple interaction terms to isolate volatility effects
+
+CONCLUSION
+--------------------------------------------------
+The panel data analysis provides evidence that the May 2022 policy change
+led to a significant increase in electricity prices in the treatment zone
+compared to control zones, even after accounting for zone-specific fixed effects.
+
+Most notably, the analysis reveals a substantially larger effect during
+volatile days, suggesting the policy had its greatest impact during periods
+of market stress when prices deviated significantly from their long-term averages.

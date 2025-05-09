@@ -1,0 +1,43 @@
+TRIPLE_INTERACTION_FE MODEL RESULTS
+================================================================================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.718
+Model:                            OLS   Adj. R-squared:                  0.718
+Method:                 Least Squares   F-statistic:                 6.127e+14
+Date:                Sat, 03 May 2025   Prob (F-statistic):           1.63e-15
+Time:                        20:17:10   Log-Likelihood:            -7.1839e+05
+No. Observations:              164520   AIC:                         1.437e+06
+Df Residuals:                  164505   BIC:                         1.437e+06
+Df Model:                          14                                         
+Covariance Type:              cluster                                         
+=======================================================================================
+                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept              18.7599      1.520     12.345      0.000      15.782      21.738
+C(zone)[T.F]           11.1346      0.397     28.063      0.000      10.357      11.912
+C(zone)[T.NE]          12.3797      0.098    125.718      0.000      12.187      12.573
+C(year)[T.2020]        -6.2818      0.666     -9.436      0.000      -7.587      -4.977
+C(year)[T.2021]        12.8179      2.647      4.843      0.000       7.630      18.006
+C(year)[T.2022]        31.3048      7.856      3.985      0.000      15.907      46.703
+C(year)[T.2023]         0.9691      2.103      0.461      0.645      -3.153       5.091
+C(year)[T.2024]         3.5659      0.901      3.958      0.000       1.800       5.332
+C(year)[T.2025]        26.4094      2.466     10.710      0.000      21.576      31.242
+treat_post              0.9765      0.764      1.277      0.201      -0.522       2.475
+post                    4.2308      1.578      2.681      0.007       1.138       7.323
+is_volatile            97.8734      7.556     12.953      0.000      83.064     112.683
+treat_volatile         12.4354      9.027      1.378      0.168      -5.258      30.129
+post_volatile          -4.9471     13.066     -0.379      0.705     -30.555      20.661
+treat_post_volatile    23.6775      9.808      2.414      0.016       4.454      42.901
+==============================================================================
+Omnibus:                    83206.355   Durbin-Watson:                   0.339
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          1456511.358
+Skew:                           2.025   Prob(JB):                         0.00
+Kurtosis:                      17.003   Cond. No.                         35.8
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+
+NOTE: This implements a panel structure with entity fixed effects, equivalent to the PanelOLS estimator.

@@ -1,0 +1,4 @@
+Model,R² within,R² between,R² overall
+Basic DiD,0.5007,0.4735,0.0862
+Triple Interaction,0.5112,0.486,0.613
+Triple + Year FE,0.5284,0.5102,0.718
