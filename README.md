@@ -36,7 +36,8 @@ We applied two primary analytical approaches:
 │   └── INAFU6065FinalPaperNYISO-ORDC.pdf
 │
 ├── requirements.txt           # Project dependencies
-├── LICENSE                    # Apache 2.0 license
+├── LICENSE                    # Creative Commons Attribution 4.0 license
+├── CITATION.cff               # Citation information
 └── README.md                  # This file
 ```
 
@@ -60,13 +61,25 @@ We applied two primary analytical approaches:
 - `paper/INAFU6065FinalPaperNYISO-ORDC.pdf`: Full academic paper with detailed methodology and findings
 
 ## Getting Started
-To reproduce our analysis:
+To reproduce our analysis, you will need to:
 1. Install the required dependencies: `pip install -r requirements.txt`
-2. Run the panel regression analysis: `python code/nyiso_panel_regression.py`
-3. Run the synthetic control analysis: `python code/Synthetic_control.py`
+2. Request the data files by contacting the authors (data files are not included in this repository)
+3. Run the panel regression analysis: `python code/nyiso_panel_regression.py`
+4. Run the synthetic control analysis: `python code/Synthetic_control.py`
+
+## Citation
+If you use this code or findings in your work, please cite:
+
+```
+Zubairi, I., Guo, R.Y., Li, L., Murata, M., Chu, I., Dorcély, C., & Villa, P.J. (2023). 
+NYISO Enhanced Scarcity Pricing Policy: Impacts on Consumer Prices. 
+Columbia University, School of International and Public Affairs.
+```
+
+For more citation formats, please see the `CITATION.cff` file.
 
 ## Contact
 This is the final project for Columbia University's INAFU6065 Economics of Energy course.
 
 ## License
-This project is licensed under the Apache 2.0 License - see the LICENSE file for details.
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0) - see the LICENSE file for details. This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator.

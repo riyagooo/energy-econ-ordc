@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Zubairi"
+    given-names: "Ibrahim"
+  - family-names: "Guo"
+    given-names: "Riya Yingran"
+  - family-names: "Li"
+    given-names: "Lina"
+  - family-names: "Murata"
+    given-names: "Mitsuyo"
+  - family-names: "Chu"
+    given-names: "Iris"
+  - family-names: "Dorcély"
+    given-names: "Colby"
+  - family-names: "Villa"
+    given-names: "Pedro Jose"
+title: "NYISO Enhanced Scarcity Pricing Policy: Impacts on Consumer Prices"
+version: 1.0.0
+date-released: 2023-05-09
+url: "https://github.com/riyagooo/energy-econ-ordc"
+preferred-citation:
+  type: unpublished
+  authors:
+    - family-names: "Zubairi"
+      given-names: "Ibrahim"
+    - family-names: "Guo"
+      given-names: "Riya Yingran"
+    - family-names: "Li"
+      given-names: "Lina"
+    - family-names: "Murata"
+      given-names: "Mitsuyo"
+    - family-names: "Chu"
+      given-names: "Iris"
+    - family-names: "Dorcély"
+      given-names: "Colby"
+    - family-names: "Villa"
+      given-names: "Pedro Jose"
+  title: "NYISO Enhanced Scarcity Pricing Policy: Impacts on Consumer Prices"
+  year: 2023
+  institution: "Columbia University"
+  department: "School of International and Public Affairs"
+  url: "https://github.com/riyagooo/energy-econ-ordc" 

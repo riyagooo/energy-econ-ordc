@@ -80,3 +80,12 @@ Desktop.ini
 
 # Project specific
 # Add custom exclusions here 
+
+# Exclude data files
+/data/
+*.xlsx
+*.csv
+*.xls
+
+# Temporary files
+*.tmp 
