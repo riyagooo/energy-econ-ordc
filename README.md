@@ -13,32 +13,57 @@ We applied two primary analytical approaches:
 1. **Difference-in-Differences (DiD)** analysis comparing NYISO Zone F (treated) with Zone C and ISO-NE (controls)
 2. **Synthetic Control** method to construct a counterfactual for Zone F prices
 
-## Repository Contents
+## Repository Structure
 
-### Code
-- `nyiso_panel_regression.py`: Panel regression analysis of NYISO price data
-- `Synthetic_control.py`: Implementation of synthetic control methodology
+```
+├── code/                      # Analysis scripts
+│   ├── nyiso_panel_regression.py  # Panel regression analysis
+│   └── Synthetic_control.py       # Synthetic control methodology
+│
+├── data/                      # Input datasets
+│   ├── NYISO Price Data.xlsx
+│   ├── DiD database_0422.xlsx
+│   ├── DiD database_including weather.xlsx
+│   └── Sythetic control regression database.xlsx
+│
+├── results/                   # Analysis outputs
+│   └── panel_results/         # Panel regression outputs
+│       ├── panel_treatment_effects.png
+│       ├── panel_analysis_summary.txt
+│       └── ... (other result files)
+│
+├── paper/                     # Final academic paper
+│   └── INAFU6065FinalPaperNYISO-ORDC.pdf
+│
+├── requirements.txt           # Project dependencies
+├── LICENSE                    # Apache 2.0 license
+└── README.md                  # This file
+```
 
-### Data
-- `NYISO Price Data.xlsx`: Primary dataset with price information
-- `DiD database_0422.xlsx`: Database for difference-in-differences analysis
-- `DiD database_including weather.xlsx`: DiD database with weather controls
-- `Sythetic control regression database.xlsx`: Data for synthetic control analysis
+## Code
+- `code/nyiso_panel_regression.py`: Panel regression analysis of NYISO price data
+- `code/Synthetic_control.py`: Implementation of synthetic control methodology
 
-### Results
-- `panel_results/`: Directory containing all panel regression outputs
+## Data
+- `data/NYISO Price Data.xlsx`: Primary dataset with price information
+- `data/DiD database_0422.xlsx`: Database for difference-in-differences analysis
+- `data/DiD database_including weather.xlsx`: DiD database with weather controls
+- `data/Sythetic control regression database.xlsx`: Data for synthetic control analysis
+
+## Results
+- `results/panel_results/`: Directory containing all panel regression outputs
   - Model summaries
   - Coefficients and statistics
   - Visualizations of treatment effects
 
-### Paper
-- `INAFU6065FinalPaperNYISO-ORDC.pdf`: Full academic paper with detailed methodology and findings
+## Paper
+- `paper/INAFU6065FinalPaperNYISO-ORDC.pdf`: Full academic paper with detailed methodology and findings
 
 ## Getting Started
 To reproduce our analysis:
 1. Install the required dependencies: `pip install -r requirements.txt`
-2. Run the panel regression analysis: `python nyiso_panel_regression.py`
-3. Run the synthetic control analysis: `python Synthetic_control.py`
+2. Run the panel regression analysis: `python code/nyiso_panel_regression.py`
+3. Run the synthetic control analysis: `python code/Synthetic_control.py`
 
 ## Contact
 This is the final project for Columbia University's INAFU6065 Economics of Energy course.
